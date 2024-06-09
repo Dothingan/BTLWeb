@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTL__Web</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        
+                            <li class="header__nav-items header__nav-items--border" id="register" onclick="header__switchModal('registerModal')"><a href="#">Đăng ký</a></li>
+                            <li class="header__nav-items" id="login" onclick="header__switchModal('loginModal')"><a href="#">Đăng nhập</a></li>
+                    </ul>
+                </nav>
+                <div class="header-with-search">
+                    <div class="logo">
+                        <h2>TMARKET</h2>
+                    </div>
+                    <div class="header__search">
+                        <input type="text" class="header__search-input" placeholder="Bạn cần tìm sản phẩm nào...?">
+                    </div>
+                    <button class="header__search-btn">
+                        <i class="fa-solid fa-magnifying-glass header__search-btn-icon"></i>
+                    </button>
+                    <a href="" class="icon-nav-header">
+                        <div><i class="fa-solid fa-cart-plus"></i></div>
+                        <span>Giỏ hàng</span>
+                    </a>   
+                    <a href="" class="icon-nav-header">
+                        <div><i class="fa-regular fa-circle-user"></i></div>
+                        <span>Tài khoản của tôi</span>
+                    </a>   
+                    <a href="" class="icon-nav-header">
+                        <div><i class="fa-solid fa-house"></i></div>
+                        <span>Trang chủ</span>
+                    </a>   
+                </div>
+            </div>
+
+            
+            <nav class="nav-menu">
+                <div class="grid">
+                    <ul class="box-menu">
+                        <li><a href="" class="item-menu">
+                            <i class="fa-solid fa-mobile"></i>
+                            <span>Điện thoại</span>
+                        </a></li>
+                            <div class="sub-container">
+                                <div class="submenu col1">
+                                    <h4>HÃNG</h4>
+                                    <ul class="display-column fomart_3">
+                                        <li><a href=""><span>Samsung</span></a></li>
+                                        <li><a href=""><span>iPhone</span></a></li>
+                                        <li><a href=""><span>Oppo</span></a></li>
+                                        <li><a href=""><span>Xiaomi</span></a></li>
+                                        <li><a href=""><span>Vivo</span></a></li>
+                                        <li><a href=""><span>TECNO</span></a></li>
+                                        <li><a href=""><span>HONOR</span></a></li>
+                                        <li><a href=""><span>TCL</span></a></li>
+                                        <li><a href=""><span>Masstel</span></a></li>
+                                        <li><a href=""><span>Benco</span></a></li>
+                                        <li><a href=""><span>Nokia</span></a></li>
+                                        <li><a href=""><span>Sumo</span></a></li>
+                                        <li><a href=""><span>SimItel</span></a></li>
+                                        <li><a href=""><span>ZTE</span></a></li>
+                                        <li><a href=""><span>Realme</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu col2">
+                                    <h4>GIÁ</h4>
+                                    <ul class="display-column fomart_1">
+                                        <li><a href=""><span>Dưới 1 triệu</span></a></li>
+                                        <li><a href=""><span>Từ 1 - 3 triệu</span></a></li>
+                                        <li><a href=""><span>Từ 3 - 7 triệu</span></a></li>
+                                        <li><a href=""><span>Từ 7 - 10 triệu</span></a></li>
+                                        <li><a href=""><span>Trên 10 triệu</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        <li><a href="" class="item-menu">
+                            <i class="fa-solid fa-laptop"></i>
+                            <span>Laptop</span>
+                        </a></li>
+                        <li><a href="" class="item-menu">
+                            <i class="fa-solid fa-tablet-screen-button"></i>
+                            <span>Máy tính bảng</span>
+                        </a></li>
+                        <li><a href="" class="item-menu">
+                            <i class="icons2 icon-menu-watch"></i>
+                            <i class="fa-solid fa-desktop"></i>
+                            <span>PC</span>
+                        </a></li>
+                        <li><a href="" class="item-menu">
+                            <i class="fa-solid fa-tv"></i>
+                            <span>Tivi</span>
+                        </a></li>
+                        <li><a href="" class="item-menu">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>Phụ kiện</span>
+                        </a></li>
+                        <li><a href="" class="item-menu">
+                            <i class="fa-solid fa-bolt"></i>
+                            <span>Đồ điện-Điện tử</span>
+                        </a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        
+    
+        <main>
+            <div class="container">
+                <div class="row row1">
+                    <div class="list-images">
+                        <img src="img/background-ing.png" alt="">
+                        <img src="img/qc.jpg" alt="">
+                        <img src="img/qc1.jpg" alt="">
+                        <img src="img/qc2.jpg" alt="">
+                        <img src="img/qc3.jpg" alt="">
+                        <img src="img/qc4.jpg" alt="">
+                        <img src="img/qc5.jpg" alt="">
+                        <img src="img/qc6.png" alt="">
+                    </div>
+                    <div class="btns">
+                        <div class="btn-left">
+                            <i class='bx bx-chevron-left' ></i>
+                        </div>
+                        <div class="btn-right">
+                            <i class='bx bx-chevron-right'></i>                        </div>
+                    </div>
+                </div>
+                <div class="row row2">
+                    <h2>Danh mục nổi bật</h2>
+                    <section class="img-boxcate">
+                        <a href="">
+                            <article>
+                                <img src="/img/fs9.jpg" alt="Điện thoại" class="boxcate-pink">
+                                <div class="overlay"></div>
+                            </article>
+                            <h3>Điện thoại</h3>
+                        </a>
+                        <a href="">
+                            <article>
+                                <img src="/img/fs12.jpg" alt="ipad" class="boxcate-pink">
+                            </article>
+                            <h3>Máy tính bảng</h3>
+                        </a>
+                        <a href="">
+                            <article>
+                                <img src="/img/fs11.jpg" alt="laptop">
+                            </article>
+                            <h3>Laptop</h3>
+                        </a>
+                        <a href="">
+                            <article>
+                                <img src="/img/fs2.jpg" alt="dongho">
+                            </article>                                
+                            <h3>Đồng hồ thông minh</h3>
+                        </a>
+                        <a href="">
+                            <article>
+                                <img src="/img/fs7.jpg" alt="dongho">
+                            </article>
+                            <h3>Phụ kiện</h3>
+                        </a>
+                        <a href="">
+                            <article>
+                                <img src="/img/fs4.jpg" alt="dongho">
+                            </article>
+                            <h3>Gia dụng</h3>
+                        </a>
+                    </section>
+                </div>
+
+                <div class="event">
+                    <img src="/img/qc8.jpg" alt="">
+                </div>
+
+                <div class="row row3">
+                    <h2><i class="fa-solid fa-bolt"></i>FLASH SALE</h2>
+                    <div class="carousel-container">
+                        <div class="list-images">
+                            <div class="col3">
+                                <a href="">
+                                    <article>
+                                        <img src="/img/fs10.jpg" alt="fs1">
+                                        <h3>Xiaomi Google Tivi 55Apro 55inch</h3>
+                                        <h2>9.290.000 <span><sup>đ</sup></span></h2>
+                                    </article>
+                                </a>
+                            </div>
+                            <div class="col3">
+                                <a href="">
+                                    <article>
+                                        <img src="/img/fs1.jpg" alt="fs1">
+                                        <h3>Xiaomi Redmi 13C</h3>
+                                        <h2>3.290.000 <span><sup>đ</sup></span></h2>
+                                    </article>
+                                </a>
+                            </div>
+                            <div class="col3">
+                                <a href="">
+                                    <article>
+                                        <img src="/img/fs2.jpg" alt="fs2">
+                                        <h3>Đồng hồ thông mình Zwatch Z1</h3>
+                                        <h2>690.000 <span><sup>đ</sup></span></h2>
+                                    </article>
+                                </a>
+                            </div>
+                            <div class="col3">
+                                <a href="">
+                                    <article>
+                                        <img src="/img/fs3.jpg" alt="BTS and Coldplay">
+                                        <h3>Honer 90 Lite 5G</h3>
+                                        <h2>5.290.000 <span><sup>đ</sup></span></h2>
+                                    </article>
+                                </a>
+                            </div>
+                            <div class="col3">
+                                <a href=""> 
+                                    <article>
+                                    <img src="/img/fs4.jpg" alt="">
+                                    <h3>Máy xay sinh tố 3 cối Sunhouse</h3>
+                                    <h2>799.000 <span><sup>đ</sup></span></h2>
+                                </article></a>
+                            </div>
+                            <div class="col3">
+                                <a href="">
+                                    <article>
+                                        <img src="/img/fs5.jpg" alt="">
+                                        <h3>Samsung Galaxy A35 5G 8/128GB</h3>
+                                        <h2>7.990.000 <span><sup>đ</sup></span></h2>
+                                    </article>
+                                </a>
+                            </div>
+                            <div class="col3">
+                                <a href="">
+                                    <article>
+                                        <img src="/img/fs6.jpg" alt="">
+                                        <h3>Xiaomi Redmi 13C</h3>
+                                        <h2>3.290.000 <span><sup>đ</sup></span></h2>
+                                    </article>
+                                </a>
+                            </div>
+                            <div class="col3">
+                                <a href="">
+                                    <article>
+                                        <img src="/img/fs7.jpg" alt="">
+                                        <h3>SDP Anker PowerCore II</h3>
+                                        <h2>790.000 <span><sup>đ</sup></span></h2>
+                                    </article>
+                                </a>
+                            </div>
+                            <div class="col3">
+                                <a href="">
+                                    <article>
+                                        <img src="/img/fs8.jpg" alt="">
+                                        <h3>Tivi Xiaomi A2 58inch</h3>
+                                        <h2>8.490.000 <span><sup>đ</sup></span></h2>
+                                    </article>
+                                </a>
+                            </div>
+                            <div class="col3">
+                                <a href="">
+                                    <article>
+                                        <img src="/img/fs9.jpg" alt="">
+                                        <h3>Samsung Galaxy A55 5G 8/128GB</h3>
+                                        <h2>9.690.000 <span><sup>đ</sup></span></h2>
+                                    </article>
+                                </a>
+                            </div>
+                            <div class="col3">
+                                <a href="">
+                                    <article>
+                                        <img src="/img/fs9.jpg" alt="">
+                                        <h3>Samsung Galaxy A55 5G 8/128GB</h3>
+                                        <h2>9.690.000 <span><sup>đ</sup></span></h2>
+                                    </article>
+                                </a>
+                            </div>
+                            <div class="col3">
+                                <a href="">
+                                    <article>
+                                        <img src="/img/fs9.jpg" alt="">
+                                        <h3>Samsung Galaxy A55 5G 8/128GB</h3>
+                                        <h2>9.690.000 <span><sup>đ</sup></span></h2>
+                                    </article>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <div class="btn-left">
+                                <i class='bx bx-chevron-left' ></i>
+                            </div>
+                            <div class="btn-right">
+                                <i class='bx bx-chevron-right'></i>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row4">
+                    <div class="list-images">
+                        <img src="/img/row4_1.jpg" alt="">
+                        <img src="/img/row4_3.jpg" alt="">
+                        <img src="/img/row4_4.jpg" alt="">
+                        <img src="/img/row4_2.png" alt=""> 
+                    </div>
+                    <div class="btns">
+                        <div class="btn-left">
+                            <i class='bx bx-chevron-left' ></i>
+                        </div>
+                        <div class="btn-right">
+                            <i class='bx bx-chevron-right'></i>                        
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row5">
+                    <h2>Gợi ý hôm nay</h2>
+                    <div class="list-product">
+                        <div class="col5">
+                            <a href="">
+                                <article>
+                                    <img src="/img/product6.jpg" alt="">
+                                    <h3>iPhone 15 Pro Max 256GB</h3>
+                                    <h2>29.990.000 <span><sup>đ</sup></span></h2>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col5">
+                            <a href="">
+                                <article>
+                                    <img src="/img/product8.jpeg" alt="">
+                                    <h3>Xiaomi 14 Ultra</h3>
+                                    <h2>9.690.000 <span><sup>đ</sup></span></h2>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col5">
+                            <a href="">
+                                <article>
+                                    <img src="/img/product3.jpeg" alt="">
+                                    <h3>Samsung Galaxy S24 Ultra 12/256GB</h3>
+                                    <h2>26.690.000 <span><sup>đ</sup></span></h2>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col5">
+                            <a href="">
+                                <article>
+                                    <img src="/img/product2.jpg" alt="">
+                                    <h3>iPhone 13 128GB</h3>
+                                    <h2>13.490.000 <span><sup>đ</sup></span></h2>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col5">
+                            <a href="">
+                                <article>
+                                    <img src="/img/product5.jpeg" alt="">
+                                    <h3>Samsung Galaxy S23 FE 8/128GB</h3>
+                                    <h2>12.890.000 <span><sup>đ</sup></span></h2>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col5">
+                            <a href="">
+                                <article>
+                                    <img src="/img/product7.jpg" alt="">
+                                    <h3>OPPO Reno10 5G 256GB</h3>
+                                    <h2>8.490.000 <span><sup>đ</sup></span></h2>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col5">
+                            <a href="">
+                                <article>
+                                    <img src="/img/product9.jpg" alt="">
+                                    <h3>MTXT HP 14s</h3>
+                                    <h2>11.990.000 <span><sup>đ</sup></span></h2>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col5">
+                            <a href="">
+                                <article>
+                                    <img src="/img/product10.jpeg" alt="">
+                                    <h3>MTXT HP 240 G8  Core i5</h3>
+                                    <h2>11.990.000 <span><sup>đ</sup></span></h2>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col5">
+                            <a href="">
+                                <article>
+                                    <img src="/img/product11.jpeg" alt="">
+                                    <h3>MTXT DELL Inspiron 15 3530</h3>
+                                    <h2>17.490.000 <span><sup>đ</sup></span></h2>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col5">
+                            <a href="">
+                                <article>
+                                    <img src="/img/product12.jpg" alt="">
+                                    <h3>Laptop Lenovo Ideapad 3 14IAU7 i5</h3>
+                                    <h2>11.990.000 <span><sup>đ</sup></span></h2>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col5">
+                            <a href="">
+                                <article>
+                                    <img src="/img/product13.jpeg" alt="">
+                                    <h3>Laptop Apple MacBook Air 13 inch</h3>
+                                    <h2>19.990.000 <span><sup>đ</sup></span></h2>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col5">
+                            <a href="">
+                                <article>
+                                    <img src="/img/product14.jpeg" alt="">
+                                    <h3>Laptop GIGABYTE G6 KF-H3VN853SH</h3>
+                                    <h2>27.790.000 <span><sup>đ</sup></span></h2>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col5">
+                            <a href="">
+                                <article>
+                                    <img src="/img/product15.jpg" alt="">
+                                    <h3>Tivi Xiaomi A2 58inch</h3>
+                                    <h2>8.490.000 <span><sup>đ</sup></span></h2>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col5">
+                            <a href="">
+                                <article>
+                                    <img src="/img/product16.jpeg" alt="">
+                                    <h3>Xiaomi Google Tivi 43A 43inch</h3>
+                                    <h2>5.690.000 <span><sup>đ</sup></span></h2>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col5">
+                            <a href="">
+                                <article>
+                                    <img src="/img/product17.jpeg" alt="">
+                                    <h3>Tivi Xiaomi TV P1 43</h3>
+                                    <h2>6.490.000 <span><sup>đ</sup></span></h2>
+                                    <strike>9.990.000 <sup>đ</sup></strike>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col5">
+                            <a href="">
+                                <article>
+                                    <img src="/img/product18.jpg" alt="">
+                                    <h3>Tivi Casper UHD Qled 55 inch</h3>
+                                    <h2>9.690.000 <span><sup>đ</sup></span></h2>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col5">
+                            <a href="">
+                                <article>
+                                    <img src="/img/product19.jpeg" alt="">
+                                    <h3>Tivi Xiaomi TV P1 55</h3>
+                                    <h2>7.990.000 <span><sup>đ</sup></span></h2>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col5">
+                            <a href="">
+                                <article>
+                                    <img src="/img/product20.jpeg" alt="">
+                                    <h3>Tivi Samsung  UHD 43 inch</h3>
+                                    <h2>11.900.000 <span><sup>đ</sup></span></h2>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col5">
+                            <a href="">
+                                <article>
+                                    <img src="/img/product21.jpeg" alt="">
+                                    <h3>Robot Hút Bụi Xiaomi</h3>
+                                    <h2>4.790.000 <span><sup>đ</sup></span></h2>
+                                    <strike>5.990.000 <sup>đ</sup></strike>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col5">
+                            <a href="">
+                                <article>
+                                    <img src="/img/product22.jpeg" alt="">
+                                    <h3>Robot hút bụi Xiaomi X10</h3>
+                                    <h2>7.990.000 <span><sup>đ</sup></span></h2>
+                                    <strike>12.990.000 <sup>đ</sup></strike>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col5">
+                            <a href="">
+                                <article>
+                                    <img src="/img/product23.jpeg" alt="">
+                                    <h3>Quạt điện Benny kiểu đứng BF-49T</h3>
+                                    <h2>1.490.000 <span><sup>đ</sup></span></h2>
+                                    <strike>2.110.000 <sup>đ</sup></strike>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col5">
+                            <a href="">
+                                <article>
+                                    <img src="/img/product24.jpeg" alt="">
+                                    <h3>Nồi chiên không dầu 6L Sunhouse</h3>
+                                    <h2>1.550.000 <span><sup>đ</sup></span></h2>
+                                    <strike>2.810.000 <sup>đ</sup></strike>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col5">
+                            <a href="">
+                                <article>
+                                    <img src="/img/product25.jpeg" alt="">
+                                    <h3>Nồi cơm điện 1.8L Sunhouse</h3>
+                                    <h2>649.000 <span><sup>đ</sup></span></h2>
+                                    <strike>1.060.000 <sup>đ</sup></strike>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col5">
+                            <a href="">
+                                <article>
+                                    <img src="/img/product26.jpeg" alt="">
+                                    <h3>Nồi chiên không dầu Xiaomi</h3>
+                                    <h2>2.390.000 <span><sup>đ</sup></span></h2>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col5">
+                            <a href="">
+                                <article>
+                                    <img src="/img/product27.jpeg" alt="">
+                                    <h3>iPad Air (Gen 6) M2 11 inch WIFI 128GB</h3>
+                                    <h2>16.390.000 <span><sup>đ</sup></span></h2>
+                                    <strike>16.990.000 <sup>đ</sup></strike>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col5">
+                            <a href="">
+                                <article>
+                                    <img src="/img/product28.jpeg" alt="">
+                                    <h3>Đồng hồ định vị Wonlex CT11</h3>
+                                    <h2>1.290.000 <span><sup>đ</sup></span></h2>
+                                    <strike>1.790.000 <sup>đ</sup></strike>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col5">
+                            <a href="">
+                                <article>
+                                    <img src="/img/product29.jpeg" alt="">
+                                    <h3>Redmi Watch 3 Active</h3>
+                                    <h2>990.000 <span><sup>đ</sup></span></h2>
+                                    <strike>1.490.000 <sup>đ</sup></strike>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col5">
+                            <a href="">
+                                <article>
+                                    <img src="/img/product30.jpeg" alt="">
+                                    <h3>Đồng hồ định vị Wonlex KT07 4G</h3>
+                                    <h2>1.890.000 <span><sup>đ</sup></span></h2>
+                                    <strike>1.990.000 <sup>đ</sup></strike>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col5">
+                            <a href="">
+                                <article>
+                                    <img src="/img/product31.jpeg" alt="">
+                                    <h3>Đồng hồ định vị Super Hero 4G</h3>
+                                    <h2>990.000 <span><sup>đ</sup></span></h2>
+                                    <strike>1.690.000 <sup>đ</sup></strike>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col5">
+                            <a href="">
+                                <article>
+                                    <img src="/img/product1.jpg" alt="">
+                                    <h3>Samsung Galaxy Z Flip5 5G 512GB</h3>
+                                    <h2>20.990.000 <span><sup>đ</sup></span></h2>
+                                    <strike>29.990.000 <sup>đ</sup></strike>
+                                </article>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </main>
+    
+        <footer>
+            <div class="footer">
+                <table>
+                    <tr>
+                        <th>Tư vấn và đặt hàng</th>
+                        <th>Chính sách</th>
+                        <th>Tra cứu thông tin</th>
+                        <th>Hệ thống</th>
+                    </tr>
+                    <tr>
+                        <td><a href="">Phương thức thanh toán</a></td>
+                        <td><a href="">Chính sách bảo hành</a></td>
+                        <td><a href="">Tra cứu hoá đơn điện tử</a></td>
+                        <td><a href="">Quy chế hoạt động</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Hướng dẫn đặt hàng</a></td>
+                        <td><a href="">Chính sách đổi trả</a></td>
+                        <td><a href="">Tra cứu ưu đãi của bạn</a></td>
+                        <td><a href="">Siêu thị gần nhất</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Góp ý, khiếu nại</a></td>
+                        <td><a href="">Chính sách giao hàng</a></td>
+                        <td><a href="">Trung tâm bảo hành</a></td>
+                        <td><a href="">Chuyên trang tuyển dụng</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><a href="">Chính sách bảo vệ dữ liệu cá nhân</a></td>
+                    </tr>
+                </table>
+            </div>
+        </footer>
+
+        <!-- Register Modal-->
+
+        <div class="modal" id="registerModal">
+            <div class="modal__overlay">
+
+            </div>
+            <div class="modal__body">
+                <div class="auth-form">
+                    <button class="btn-close" onclick="closeModal('registerModal')">
+                        <i class="fa-regular fa-circle-xmark btn-close-icon"></i>
+                    </button>
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <span class="auth-form__switch-btn" onclick="switchModal('registerModal', 'loginModal')">Đăng nhập</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Họ và tên">
+                        </div>          
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Nhập email/sđt của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                        </div>
+                    </div>
+                    <p>Bằng việc đăng kí này, bạn đã chấp nhận các chính sách của TMARKET</p>
+                    <div class="auth-form__controls">
+                        <button class="btn btn-disabled">Tạo tài khoản</button>
+                    </div>
+                    <div class="auth-form__social">
+                        <p class="social-heading">
+                            <span>Hoặc đăng nhập bằng</span>
+                        </p>
+                        <ul class="social-items">
+                            <li class="social-item social-item-gg btn-disabled"><a href="">
+                                <i class="fa-solid fa-envelope auth-form__social-icon"></i>
+                                GOOGLE
+                            </a></li>
+                            <li class="social-item social-item-fb btn-disabled"><a href="">
+                                <i class="fa-brands fa-facebook auth-form__social-icon"></i>
+                                FACEBOOK
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Login Modal-->
+
+
+         <div class="modal" id="loginModal">
+            <div class="modal__overlay">
+
+            </div>
+            <div class="modal__body">
+                <div class="auth-form">
+                    <button class="btn-close" onclick="closeModal('loginModal')">
+                        <i class="fa-regular fa-circle-xmark btn-close-icon"></i>
+                    </button>
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <span class="auth-form__switch-btn"  onclick="switchModal('loginModal', 'registerModal')">Đăng ký</span>
+                    </div>
+                    <div class="auth-form__form">      
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Nhập email/sđt của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu">
+                        </div>
+                    </div>
+                    <div class="auth-form__help btn-disabled">
+                        <div class="auth-form__help-link">Quên mật khẩu</div>
+                    </div>
+                    <div class="auth-form__controls">
+                        <button class="btn btn-disabled">Đăng nhập</button>
+                    </div>
+                    <div class="auth-form__social">
+                        <p class="social-heading">
+                            <span>Hoặc đăng nhập bằng</span>
+                        </p>
+                        <ul class="social-items">
+                            <li class="social-item social-item-gg btn-disabled"><a href="">
+                                <i class="fa-solid fa-envelope auth-form__social-icon"></i>
+                                GOOGLE
+                            </a></li>
+                            <li class="social-item social-item-fb btn-disabled"><a href="">
+                                <i class="fa-brands fa-facebook auth-form__social-icon"></i>
+                                FACEBOOK
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <script src="js/imageSlider.js"></script>
+        <script src="js/modal.js"></script>
+        <script src="js/row3Slider.js"></script>
+    </div>
+</body>
+</html>
