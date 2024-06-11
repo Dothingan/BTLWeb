@@ -636,3 +636,245 @@
 .main1_row3 {
     background-color: #c7e8fb;
 }
+
+
+
+
+#wrap-payment {
+    background-color: #fff;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.wrap-payment-container {
+    display: flex;
+}
+
+.payment-img img{
+    /* flex: 1; */
+    width: 130px;
+    padding: 10px;
+}
+
+.payment-information-sl {
+    display: flex;
+    justify-content: space-around;
+}
+
+.payment-information-sl h2 {
+    padding: 20px;
+    font-size: 1.8rem;
+}
+
+.chance {
+    display: flex;
+    align-items: center;
+    /* background-color: #f1f1f1; */
+    border-radius: 20px;
+    padding: 10px;
+    /* max-width: 200px; */
+    /* margin: 50px auto; */
+    /* justify-content: space-between; */
+}
+
+.soluong {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.chance__btn {
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.chance__btn:hover {
+    background-color: #777;
+}
+
+.quantity {
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.btn-delete {
+    background-color: transparent;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.btn-delete:hover {
+    color: red;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+.price {
+    font-size: 20px;
+    color: red;
+    margin-left: 10px;
+}
+
+.payment__color {
+    margin: 20px;
+}
+.text_color {
+    font-size: 1.6rem;
+}
+select {
+    padding: 5px;
+    border-radius: 10px;
+}
+select option {
+    color: #2196F3;
+}
+
+.form-container {
+    padding: 20px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1.6rem;
+}
+
+
+small {
+    font-size: 1.3rem;
+}
+
+.form-group2 {
+    margin-bottom: 10px;
+}
+
+.form-group2 input, .form-group2 select, .form-group2 textarea {
+    width: calc(100% - 10px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 5px 0;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group .radio-group {
+    display: flex;
+    align-items: center;
+}
+
+.form-group .radio-group input {
+    margin-right: 10px;
+}
+
+.form-group .radio-group label {
+    margin-right: 20px;
+}
+
+.form-group .btn-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group2 .btn-group>button {
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-group .btn-group button:last-child {
+    margin-right: 0;
+}
+
+.form-group .btn-group button.active {
+    border-color: #e53935;
+    background-color: #fff;
+}
+
+.form-group .checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.form-group .checkbox-group input {
+    margin-right: 10px;
+}
+
+.form-group .checkbox-group label {
+    margin-right: 20px;
+}
+
+.pttt {
+    margin: 0 20px;
+}
+
+.text {
+    margin-top: 20px;
+}
+
+.txt-menthod {
+    /* margin: 10px 0; */
+    color: #000000;
+    margin-right: 40px;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ddd;
+    font-size: 1.4rem;
+}
+
+.txt-menthod:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+.total {
+    font-size: 1.8rem;
+    font-weight: bold;
+    float: right;
+}
+
+#total-price {
+    margin: 100px;
+    color: #ff0000;
+}
+
+.thanhtoan {
+    font-size: 2rem;
+    background-color: #e53935;
+    color: #fff;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 15px;
+    margin: 20px 0;
+    margin-left: 770px;
+    
+}
